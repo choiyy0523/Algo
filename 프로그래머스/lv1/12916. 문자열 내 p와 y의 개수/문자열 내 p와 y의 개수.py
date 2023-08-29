@@ -12,3 +12,5 @@ def solution(s):
         return True
     else:
         return False
+
+## 아예 전부 lower로 돌리고 count() 써도 됨
