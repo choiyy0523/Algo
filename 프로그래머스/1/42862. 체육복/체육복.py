@@ -1,4 +1,6 @@
 def solution(n, lost, reserve):
+    # 지금 아래에서 l-1 in reserve를 먼저 체크하고 있기 때문에, sort 안해주면 번호가 적은 사람이 체육복을 못 빌리는 경우가 생김
+    # ex. lost = [4, 2], reserve = [5, 3] -> 4가 3을 먼저 가져가버리기 때문에 2, 4 모두 빌릴 수 있음에도 불가능해짐
     lost.sort()
     reserve.sort()
     
