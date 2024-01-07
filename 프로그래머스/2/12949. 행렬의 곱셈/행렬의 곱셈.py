@@ -4,11 +4,11 @@ def solution(arr1, arr2):
     J = len(arr2[0])   # arr2 가로  2
     K = len(arr2)      # arr2 세로  2
     
-    ans = [[0] * J for _ in range(N)]  # 2, 3 [[0, 0], [0, 0], [0, 0]]
+    result = [[0] * J for _ in range(N)]  # 2, 3 [[0, 0], [0, 0], [0, 0]]
     
     for n in range(N):   
         for j in range(J):  
             for m in range(M):
-                ans[n][j] += arr1[n][m] * arr2[m][j] 
+                result[n][j] += arr1[n][m] * arr2[m][j] 
 
-    return ans
+    return result
